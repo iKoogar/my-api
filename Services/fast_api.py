@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
-from fastapi.responses import HTMLResponse
+import os, random
+
+# from fastapi.responses import HTMLResponse
 
 
 app = FastAPI()
@@ -20,5 +22,6 @@ async def getHTML(num):
 
 @app.get("/BDD_background")
 async def BDD_background():
-    return FileResponse("Data/BDD_images/Yukina1.jpg")
+    random_file_name = random.choice(os.listdir("Data/BDD_images"))
+    return FileResponse("Data/BDD_images/" + random_file_name)
 
