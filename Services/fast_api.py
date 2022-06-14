@@ -20,7 +20,7 @@ async def getHTML(num):
     return HTMLResponse(content=str(line), status_code=200)
 """
 
-@app.get("/BDD_background")
+@app.get("/BDD_background.png")
 async def BDD_background():
     random_file_name = random.choice(os.listdir("Data/BDD_images"))
     return FileResponse("Data/BDD_images/" + random_file_name)
