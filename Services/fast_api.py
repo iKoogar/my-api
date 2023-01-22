@@ -25,3 +25,8 @@ async def BDD_background():
     random_file_name = random.choice(os.listdir("Data/BDD_images"))
     return FileResponse("Data/BDD_images/" + random_file_name)
 
+@app.get("/BDD_background")
+async def BDD_background():
+    random_file_name = random.choice(os.listdir("Data/BDD_images"))
+    return FileResponse("Data/BDD_images/" + random_file_name)
+
