@@ -25,3 +25,7 @@ async def BDD_background():
 @app.get("/aoba")
 async def BDD_background():
     return FileResponse("Data/BDD_images/29ukLNL.png")
+
+@app.get("/aoba.png")
+async def BDD_background():
+    return FileResponse("Data/BDD_images/29ukLNL.png")
