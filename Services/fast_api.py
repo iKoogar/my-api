@@ -29,10 +29,10 @@ async def BDD_background():
     random_file_name = random.choice(os.listdir("Data/BDD_images"))
     return FileResponse("Data/BDD_images/" + random_file_name)
 
-@app.get("/text")
+@app.get("/text.txt")
 async def BDD_background():
     return FileResponse("Data/scratch.txt")
 
-@app.get("/pdf")
+@app.get("/pdf.pdf")
 async def BDD_background():
     return FileResponse("Data/Sorting-Part_2.pdf")
