@@ -10,7 +10,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello bro"}
 
 @app.get("/BDD_background.png")
 async def BDD_background():
